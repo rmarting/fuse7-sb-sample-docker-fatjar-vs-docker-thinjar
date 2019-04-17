@@ -19,7 +19,7 @@ to have access to a Docker daemon.
 
 The example can be built with
 
-    mvn clean package -Pdocker-fatjar
+    mvn clean package -Pfuse7-sb-fatjar
 
 ### Inspecting your image
 
@@ -44,7 +44,7 @@ History of your fatjar image
 
 The example can be built with
 
-    mvn clean package -Pdocker-thinjar
+    mvn clean package -Pfuse7-sb-thinjar
 
 ### Inspecting your image
 
