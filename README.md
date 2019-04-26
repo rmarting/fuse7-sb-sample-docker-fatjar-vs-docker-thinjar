@@ -1,5 +1,7 @@
 # Fuse 7 Images with FatJar versus ThinJar
 
+Sample repo of [Red Hat Developer Blog Post](https://developers.redhat.com/blog/2019/04/26/optimizing-red-hat-fuse-7-spring-boot-container-images/)
+
 This example demonstrates how build Fuse 7 on Spring Boot images with two different approaches:
 
 * **FatJar**: Application packaged as original Spring Boot Application
