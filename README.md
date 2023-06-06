@@ -1,5 +1,9 @@
 # Fuse 7 Images with FatJar versus ThinJar
 
+![License](https://img.shields.io/github/license/rmarting/fuse7-sb-sample-docker-fatjar-vs-docker-thinjar?style=plastic)
+![Main Lang](https://img.shields.io/github/languages/top/rmarting/fuse7-sb-sample-docker-fatjar-vs-docker-thinjar)
+![Last Commit](https://img.shields.io/github/last-commit/rmarting/fuse7-sb-sample-docker-fatjar-vs-docker-thinjar)
+
 Sample repo of [Red Hat Developer Blog Post](https://developers.redhat.com/blog/2019/04/26/optimizing-red-hat-fuse-7-spring-boot-container-images/)
 
 This example demonstrates how build Fuse 7 on Spring Boot images with two different approaches:
@@ -12,7 +16,7 @@ layers could help you in your deployment pipelines.
 
 The quickstart uses Spring Boot to configure a little application that includes a Camel route that triggers a message every 5th second, and routes the message to a log.
 
-## Requeriments
+## Requirements
 
 This project needs a Docker daemon to build the final images. Please review your environment
 to have access to a Docker daemon.
@@ -113,7 +117,7 @@ Initial conclusions:
 
 Main Differences:
 
-* Each time we build the fatjar application the layer with the application is replaced completely (aroung 22Mb)
+* Each time we build the fatjar application the layer with the application is replaced completely (around 22Mb)
 
     $ mvn clean package -Pdocker-fatjar
     $ docker image history fuse7-sb-sample-fatjar:1.0.0-SNAPSHOT 
